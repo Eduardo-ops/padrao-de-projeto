@@ -4,10 +4,11 @@ public class main {
 
 	public static void main(String[] args) {
 
-		var altura = new Monostate();
-		var largura = new Monostate();
+		Monostate altura = new Monostate();
+		Monostate largura = new Monostate();
 
-		altura.getAlgura();
+		int algura = altura.getAlgura();
+		System.out.println(algura);
 		largura.getLargura();
 
 		System.out.println(altura);
@@ -16,6 +17,9 @@ public class main {
 		altura.setAlgura(1);
 
 		System.out.println(altura);
+		
+		System.out.println(altura);
+		System.out.println(largura);
 
 	}
 

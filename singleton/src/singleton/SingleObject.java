@@ -1,23 +1,22 @@
 package singleton;
 
-public class Singleton {
+public class SingleObject {
 
 	// Único objeto singleton criado.
-	private static Singleton uniqueInstance;
+	private static SingleObject instanciaUnica = null;
 
 	// Construtor privado para evitar de qualquer outra classe instanciar um novo
 	// objeto.
-	private Singleton() {
+	private SingleObject() {
 
 	}
 
 	// Possibilitando que o unico objeto criado seja acessível.
-	public static synchronized Singleton getInstance() {
-		if (uniqueInstance == null) {
-			uniqueInstance = new Singleton();
+	public static SingleObject getInstance() {
+		if (instanciaUnica == null) {
+			instanciaUnica = new SingleObject();
 		}
-
-		return uniqueInstance;
+		return instanciaUnica;
 	}
 
 	public void showMessage() {
