@@ -1,4 +1,4 @@
-public class PersonFactory {
+public abstract class PersonFactory {
 
     public static Person createPerson(String name, String sex) {
         if (sex.equals("M")) {
