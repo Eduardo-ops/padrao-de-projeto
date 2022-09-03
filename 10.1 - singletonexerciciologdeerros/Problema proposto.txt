@@ -1,0 +1,1 @@
+Problema: O servidor está tendo sua memória desperdiçada com as quantidades de logs de erros que vai gerando ao longo dos dias, precisamos encontrar uma solução para que seja sanado o problema.
