@@ -15,7 +15,19 @@ public class main {
 
         // Mostrando iformações.
         pizzaMG.informacoesDePizza();
-        System.out.println("Informações de pizza clonada: " + pizzaCloneDeMG.getNome() + " sabor: " + pizzaCloneDeMG.getSabor() + " tamanho: " + pizzaCloneDeMG.getTamanho());
+        System.out.println("Informações de pizza MG clonada: " + pizzaCloneDeMG.getNome() + " sabor: " + pizzaCloneDeMG.getSabor() + " tamanho: " + pizzaCloneDeMG.getTamanho());
+
+        // g. Implemente uma nova classe PizzaSP e repita o teste anterior
+        PizzaSP pizzaSP = new PizzaSP();
+        pizzaSP.setNome("Quatro Queijo");
+        pizzaSP.setSabor("Mussarela");
+        pizzaSP.setTamanho(8);
+
+        Pizza pizzaCloneDePizzaSp = pizzaSP.clone();
+        pizzaCloneDePizzaSp.setTamanho(4);
+
+        pizzaSP.informacoesDePizza();
+        System.out.println("Informações de pizza SP clonada: " + pizzaCloneDePizzaSp.getNome() + " sabor: " + pizzaCloneDePizzaSp.getSabor() + " tamanho: " + pizzaCloneDePizzaSp.getTamanho());
 
     }
 }
