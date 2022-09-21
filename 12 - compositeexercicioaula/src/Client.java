@@ -15,9 +15,9 @@ public class Client {
         Line lineTwo = new Line();
 
         // Inicialização de dois componentes do gráfico
-        Composite graphicOne = new Composite();
-        Composite graphicTwo = new Composite();
-        Composite graphicThree = new Composite();
+        Picture graphicOne = new Picture();
+        Picture graphicTwo = new Picture();
+        Picture graphicThree = new Picture();
 
         // Criando primeiro gráfico
         graphicOne.add(rectangle); // Adicinando retângulo no gráfico
@@ -29,17 +29,15 @@ public class Client {
 
         // Criando o segundo gráfico
         graphicTwo.add(rectangleTwo);
-        graphicTwo.add(textTwo);
-        graphicTwo.add(lineTwo);
 
         System.out.println("Componentes do gráfico 2:");
-        graphicOne.print();
+        graphicTwo.print();
 
         // Criando o terceiro gráfico
         graphicThree.add(graphicOne);
         graphicThree.add(graphicTwo);
 
         System.out.println("Componentes do gráfico 3:");
-        graphicOne.print();
+        graphicThree.print();
     }
 }

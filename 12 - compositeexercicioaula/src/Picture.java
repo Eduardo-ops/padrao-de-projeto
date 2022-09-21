@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Composite implements GraphicComponent {
+public class Picture implements GraphicComponent {
 
     private List<GraphicComponent> childGraphics = new ArrayList<GraphicComponent>();
 
